@@ -1,0 +1,55 @@
+{
+  "post": [
+  {
+    "solanaid": "Username",
+    "title": "Sample Title",
+    "content": "This is the content of the post.",
+    "replies": [
+      {
+        "solanaid": "User1",
+        "content": "Reply 1 content."
+      },
+      {
+        "solanaid": "User2",
+        "content": "Reply 2 content."
+      },
+      {
+        "solanaid": "User3",
+        "content": "Reply 3 content."
+      }
+    ]
+  },{
+    "solanaid": "AnotherUser",
+    "title": "Another Sample Title",
+    "content": "This is another post's content.",
+    "replies": [
+      {
+        "solanaid": "User4",
+        "content": "Reply 4 content."
+      },
+      {
+        "solanaid": "User5",
+        "content": "Reply 5 content."
+      }
+    ]
+  },{
+    "solanaid": "UserX",
+    "title": "Third Sample Title",
+    "content": "This is the content of a third post.",
+    "replies": [
+      {
+        "solanaid": "User6",
+        "content": "Reply 6 content."
+      },
+      {
+        "solanaid": "User7",
+        "content": "Reply 7 content."
+      },
+      {
+        "solanaid": "User8",
+        "content": "Reply 8 content."
+      }
+    ]
+  }
+]
+}
