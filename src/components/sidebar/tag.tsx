@@ -4,20 +4,15 @@ import type { InputRef } from 'antd';
 import { Button, Input, Tag, theme } from 'antd';
 
 interface RecipeTagProp{
+    keyword: string
     placeholder: string
+    updateValue: (keyword: string, value: string[]) => void;
 }
 
-const RecipeTag: React.FC<RecipeTagProp> = ({placeholder}) => {
+const RecipeTag: React.FC<RecipeTagProp> = ({keyword, placeholder, updateValue}) => {
   const [tags, setTags] = useState<string[]>([]);
-  const [inputVisible, setInputVisible] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef<InputRef>(null);
-
-  useEffect(() => {
-    if (inputVisible) {
-      inputRef.current?.focus();
-    }
-  }, [inputVisible]);
 
   const handleClose = (removedTag: string) => {
     const newTags = tags.filter((tag) => tag !== removedTag);
@@ -33,7 +28,7 @@ const RecipeTag: React.FC<RecipeTagProp> = ({placeholder}) => {
     if (inputValue && tags.indexOf(inputValue) === -1) {
       setTags([...tags, inputValue]);
     }
-    setInputVisible(false);
+    updateValue(keyword, tags)
     setInputValue('');
   };
 

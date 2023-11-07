@@ -28,6 +28,17 @@ const CreateRecipeModal:React.FC<CreateRecipeProps> = ({isOpen, setIsOpen}) => {
         procedure: ''
     })
 
+    const updateValue = (keyword: string, value: string[]) => {
+        setRecipe((prevContent) => ({
+          ...prevContent,
+          [keyword]: value,
+        }));
+      };
+
+    const show = () => {
+        console.log(recipe)
+    }
+
 return (
     <Modal
         width={800}
@@ -63,13 +74,13 @@ return (
                 </div>
                 </div>
                 <div>
-                    <RecipeTag placeholder='Add Ingredient'/>
+                    <RecipeTag placeholder='Add Ingredient' keyword='ingredients' updateValue={updateValue}/>
                 </div>
             </div>
             <div>
                 Equipments:
                 <div>
-                    <RecipeTag placeholder='Add Equipment'/>
+                    <RecipeTag placeholder='Add Equipment' keyword='equipments' updateValue={updateValue}/>
                 </div>
             </div>
             <div className='mt-8 italic text-xs text-primary-400'>
@@ -80,6 +91,7 @@ return (
                 <div>Procedure:</div>
                 <TextArea
                     size='small'
+                    className='bg-primary-700'
                     autoSize={{ minRows: 8, maxRows: 10 }}
                     onChange={(e)=>setRecipe({...recipe, procedure:e.target.value})}
 

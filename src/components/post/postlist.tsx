@@ -16,9 +16,14 @@ const RecipeList:React.FC<RecipeComponent> = ({ solanaid, name, ingredients, equ
 
 return (
     <div className=''>
-        <div onClick={()=>setIsOpen(true)} className='bg-accent-800 px-8 py-3 rounded-lg cursor-pointer hover:scale-110 transition-all'>
-            <div className='text-white text-xl font-bold'>{name}</div>
-            <div className='text-primary-200'>{`Published by ${solanaid}`}</div>
+        <div onClick={()=>setIsOpen(true)}> 
+            <div>
+                
+            </div>
+        <div className='bg-accent-800 px-8 py-3 rounded-lg cursor-pointer hover:scale-110 transition-all'>
+            <div className='text-white text-lg font-bold'>{name}</div>
+            <div className='text-sm text-primary-200'>{`Published by ${solanaid}`}</div>
+            </div>
         </div>
             <Modal
             width={800}

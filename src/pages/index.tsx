@@ -10,12 +10,27 @@ export default function Home() {
   return (
     <div className='text-text flex flex-col items-center'>
       <Navbar/>
-      <div className="grid grid-cols-[25%_75%] w-full md:w-9/12">
+      <div className="grid grid-cols-[25%_75%] w-full md:w-8/12">
         <div className="text-white w-full">
           <Sidebar/>
         </div>
-        <div className="grid grid-cols-2 gap-5">
+        <div className="flex flex-col gap-5">
           {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
+            ))}
+            {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
+            ))}
+            {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
+            ))}
+            {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
+            ))}
+            {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
+            ))}
+            {recipes.map((val, key)=>(
             <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
             ))}
           </div>
