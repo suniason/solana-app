@@ -5,3 +5,11 @@
 :root {
   background-color: #020712;
 }
+
+::placeholder {
+  color: #adadad;
+}
+
+::-ms-input-placeholder { 
+  color: #adadad;
+}

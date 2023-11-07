@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/components";
 import data from '../components/testfile/post.json' 
-import Post from "@/components/post/posts";
 import Sidebar from "@/components/sidebar/sidebar";
+import RecipeList from "@/components/post/postlist";
 
 export default function Home() {
 
-  const post = data.post
+  const recipes = data.recipes
 
   return (
     <div className='text-text flex flex-col items-center'>
@@ -14,11 +14,11 @@ export default function Home() {
         <div className="text-white w-full">
           <Sidebar/>
         </div>
-        <div>
-          {post.map((val, key)=>(
-            <Post key={key} title={val.title} solanaid={val.solanaid} text={val.content} replies={val.replies}/>
+        <div className="grid grid-cols-2 gap-5">
+          {recipes.map((val, key)=>(
+            <RecipeList key={key} solanaid={val.publisher} name={val.name} ingredients={val.ingredients} equipments={val.equipment} procedure={val.procedure} />
             ))}
-        </div>
+          </div>
       </div>
     </div>
   )

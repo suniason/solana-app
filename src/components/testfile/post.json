@@ -1,55 +1,47 @@
 {
-  "post": [
-  {
-    "solanaid": "Username",
-    "title": "Sample Title",
-    "content": "This is the content of the post.",
-    "replies": [
-      {
-        "solanaid": "User1",
-        "content": "Reply 1 content."
-      },
-      {
-        "solanaid": "User2",
-        "content": "Reply 2 content."
-      },
-      {
-        "solanaid": "User3",
-        "content": "Reply 3 content."
-      }
-    ]
-  },{
-    "solanaid": "AnotherUser",
-    "title": "Another Sample Title",
-    "content": "This is another post's content.",
-    "replies": [
-      {
-        "solanaid": "User4",
-        "content": "Reply 4 content."
-      },
-      {
-        "solanaid": "User5",
-        "content": "Reply 5 content."
-      }
-    ]
-  },{
-    "solanaid": "UserX",
-    "title": "Third Sample Title",
-    "content": "This is the content of a third post.",
-    "replies": [
-      {
-        "solanaid": "User6",
-        "content": "Reply 6 content."
-      },
-      {
-        "solanaid": "User7",
-        "content": "Reply 7 content."
-      },
-      {
-        "solanaid": "User8",
-        "content": "Reply 8 content."
-      }
-    ]
-  }
-]
+  "recipes": [
+    {
+      "publisher": "John Doe",
+      "name": "Spaghetti Carbonara",
+      "ingredients": [
+        "200g spaghetti",
+        "2 large eggs",
+        "100g Pecorino cheese",
+        "100g pancetta",
+        "2 cloves of garlic",
+        "Salt and black pepper"
+      ],
+      "equipment": [
+        "Large pot",
+        "Frying pan",
+        "Grater",
+        "Bowl",
+        "Whisk"
+      ],
+      "procedure": 
+        "Boil the spaghetti in salted water until al dente. In a bowl, whisk together eggs, grated Pecorino cheese, and black pepper. In a frying pan, sauté pancetta and garlic until crispy. Drain the spaghetti and combine it with the egg and cheese mixture. Mix in the pancetta and serve immediately."
+      
+    },
+    {
+      "publisher": "Jane Smith",
+      "name": "Chicken Alfredo",
+      "ingredients": [
+        "8 oz fettuccine pasta",
+        "2 boneless, skinless chicken breasts",
+        "2 cups heavy cream",
+        "1/2 cup grated Parmesan cheese",
+        "2 cloves garlic",
+        "Salt and white pepper"
+      ],
+      "equipment": [
+        "Large pot",
+        "Pan",
+        "Grater",
+        "Whisk"
+      ],
+      "procedure":
+        "Cook fettuccine pasta until al dente, then drain. Season chicken with salt and white pepper, then cook in a pan until done. In a separate pan, combine cream, grated Parmesan, and minced garlic. Simmer until sauce thickens, then add cooked chicken. Serve the chicken Alfredo over the cooked fettuccine pasta."
+      
+    }
+  ]
 }
